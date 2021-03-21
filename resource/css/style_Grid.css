@@ -1,0 +1,112 @@
+body
+{
+    font-family: Tahoma;
+    font-size: 15px;
+    margin: 0px auto;
+   
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container
+{
+    display: grid;
+    background-image: linear-gradient(0,rgb(91, 29, 99),rgb(69, 14, 77));
+    width: 90%;
+    margin: 0 auto;
+}
+.h3{background-color: rgb(43, 9, 48);height: 100%;line-height: 100%;color: white;font-size: 20px;-webkit-transition: width 1s;transition: 1s;}
+.h3:hover{width:265px;color: rgb(202, 138, 191);}
+.imgs:hover, .imgs:active{filter: brightness(55%) blur(0.5px);/*do sang cua buc anh,lam mo cho buc anh*/}
+.icons-menu:hover, .icon-footer:hover, .footer_right ul li a:hover{color: rgb(150, 118, 150);}
+
+/*.........................header....................*/
+
+.header{background-image: linear-gradient(0,rgb(91, 29, 99),rgb(39, 8, 43));}
+.header-top{display: flex; justify-content: space-between;margin: 7px 10px;}
+.header-top-ul{list-style: none;}
+.header-top-li{margin: 0 8px;}
+.header-top-li-separate{border-right: 2px solid rgb(126, 53, 133);padding-right:15px ;}
+.header-top-li, .header-top-li-link{display: inline-block;font-size: 0.9rem; color:#fff;text-decoration: none;font-weight: 100;}
+.header-top-li:hover, .header-top-li-link:hover, .header-icon:hover{ cursor: pointer; color: rgba(255,255,255, 0.7);}
+.header-icon-link{color:white;text-decoration: none;}
+.header-icon{font-size: 17px;margin:0 4px ;}
+.icon-no-cursor{cursor:text;color: white;}
+.name-top{font-size: 40px; font-weight: 100;color: rgb(170, 59, 170);padding-right: 100px;margin-top: 15px;}
+.header-bottom-logo img{ width:60%;max-height:100%; object-fit: cover;margin-left: 20px;}
+.header-search-click input{width: 100%;height: 97%;object-fit: cover;border:none;}
+.header-search-box input{width: 95%;height: 97%;object-fit: cover;border:none;}
+.icon{font-size: 40px;color: white;}
+.header-search-box, .header-search-click, .header-search-icon{margin-top: 20px;}
+.header-search-click input:hover, .header-search-link input:active{background-color: rgb(118, 55, 143);}
+.btnn:hover{background-color: rgb(23, 214, 150);}
+.btnn{height: 35px;border-radius: 5px;}
+
+.modal {display: none; position: fixed;z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%;overflow: auto; background-color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, .4);}
+.modal-content { background-color: #fefefe; margin: auto; padding: 20px;border: 1px solid #888;width: 40%; align-items: center;text-align: center;}
+.modal-content img{width: 35%;height: 15%;}
+.close {color: #aaaaaa; float: right; font-size: 28px;font-weight: bold;top: 0;left: 0;}
+.close:hover,.close:focus {border: 2px solid rgb(49, 32, 30); color: rgb(218, 47, 47);text-decoration: none;cursor: pointer;} 
+.buttom{background-color: aquamarine;border-radius: 5px;border: 2px solid springgreen; display: block;text-decoration: none;width: 20%;padding: 2%;margin-left: 40%;}
+.buttom:hover{background-color: rgb(0, 255, 191);}
+.form input{display: block;margin: 15% auto;width: 120%;padding: 5%;border-radius: 5px;}
+.form input:hover{border: 2px solid springgreen;}
+
+
+/*.........................Banner....................*/
+
+.banner{background-position: center; background-attachment: fixed;margin: 0 20px;display: flex;justify-content: center;}
+.slide{position: relative;height: 100%;width: 100%;}
+.slide img{position: absolute;height: 100%;width: 100%;object-fit: cover;filter: drop-shadow(0 0 5px rgb(0, 98, 128));}
+/* absolute:các ảnh chồng lên nhau */
+.slide a{display: block;width: 60px;height: 45px;background: rgba(172, 166, 166, 0.7);z-index: 1000;text-decoration: none;text-align: center;color: #fff;line-height: 45px;}
+.next{position: absolute;right: 0px;top: 180px;}
+.prev{position: absolute;left: 0px;top: 180px;}
+.next:hover, .prev:hover{background: rgba(99, 96, 96, 0.8);}
+/* .banner h1{text-align: center;height: 500px;line-height: 500px;color: rgb(174, 144, 194);font-size: 35px;}//text-align: center;background-image: linear-gradient(35deg,rgba(91, 29, 99,0.7) 50%,rgba(39, 8, 43,0.7)),url("../imgs/anhnen3-204742_1280.webp");
+.icons-h1{color: violet;font-size: 35px;} */
+
+/*.........................Menu....................*/
+
+.menu{background-image: linear-gradient(0,rgb(91, 29, 99),rgb(69, 14, 77));margin: 0 10px;}
+.menus-icon{margin-left: 70px; color: rgb(141, 92, 156);}
+.menus-icon:hover{color: rgb(171, 109, 184);}
+.icons-menu{color: rgb(151, 67, 151);}
+.list ul{padding-left: 0;margin: 0;}
+.list ul li{list-style: none;}
+.list ul li a{display: block;text-decoration: none;line-height: 50px;border-bottom: 1px solid rgb(194, 137, 196); color: rgb(204, 152, 209); }
+
+
+.img-menu{text-align: center;color: violet;}
+.nc{color: white;margin: 200px 90px;font-size: 100px;}
+.img-menu img{display: block;height: 130px; border-radius: 50%;border: 3px solid #265077; margin: 7px auto;}
+
+/*.........................Content....................*/
+
+.icons-h3{color: violet;font-size: 20px;}
+.content{text-align: center;margin: 0 20px}
+
+.img img{border-radius: 7px; width:100%;height:100%; object-fit: cover;filter: drop-shadow(0 0 5px blue);}
+
+
+.r{background-color: rgb(62, 4, 85);}
+ol li{margin-top: 20px;}
+.product-audio{width: 250px;height: 30px;margin-top: 5px;}
+
+/*.........................Rank....................*/
+
+
+.rank-right{background-image: linear-gradient(35deg,rgba(114, 37, 124, 0.7) 50%,rgba(72, 21, 78, 0.7)),url("../imgs/haanhtuan.jpg");background-attachment: fixed;}
+
+/*.........................Footer....................*/
+
+.footer{  text-align: center;  background-image: linear-gradient(0,rgb(77, 25, 83),rgb(38, 9, 43));}
+.footer_left_logo img{margin:5px auto; border-radius: 90%;width:40%;height:100%; object-fit: cover;}
+.footer_left_Name{margin:5px auto;font-size: 13px;text-align: center;color: white;}
+.footer_right ul{margin: 0px;padding: 0px; margin-left: 580px;}
+.footer_right ul li{ list-style: none;float: left;}/*mat dau cham,cac link thang hang nhau*/
+.footer_right ul li a{text-decoration: none;/*mat dau gach chan*/ height: 100px;line-height: 90px; /*can giua*/ padding: 0px 15px 0px 15px;/*top right bottom left*/ border-left:1px solid white;color: white;}
+.icons-footer{margin-left: 580px;}
+.icon-footer{ color: rgb(255, 255, 253);font-size: 30px;float:left;margin:5px 15px;}

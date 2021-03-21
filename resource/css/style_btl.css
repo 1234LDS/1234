@@ -1,0 +1,215 @@
+body
+{
+    font-family: Tahoma;
+    font-size: 15px;
+    width: 1300px;
+    margin: 0px auto;
+   
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*...........................................................*/
+/*.................Menu_top...............................*/
+/*............................................................*/
+.menu_top
+{
+    background-color: #141414;
+    height: 60px;
+    position: fixed;
+    width: 1300px;
+}
+.menu_top .menu_left{
+    width: 200px;
+    background-color: #141414;
+    height: 60px;
+    float: left;
+}
+.menu_top .menu_left .menu_left_logo{width: 60px;height: 60px;float: left;}
+.menu_top .menu_left .menu_left_logo .logo{width: 100%;height: 100%;}
+.menu_top .menu_left .menu_left_Name{width: 140px;height: 60px;float: left;line-height: 60px;}
+.menu_top .menu_left .menu_left_Name .name{font-size: 30px;  color: rgb(204, 133, 53);margin-left: 15px;}
+.menu_top .menu_center
+{
+    width: 500px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    float: left;
+}
+.menu_center input.ip1{width: 250px;height: 30px;line-height: 30px;float: left;margin: 15px auto;margin-left: 80px;border-radius: 3px;}
+.menu_center input.ip2{width: 80px;height: 30px;line-height: 30px;float: left;margin: 15px auto;margin-left: 3px;border-radius: 3px;transition: all .3s;}
+.menu_center input.ip2:hover,
+.menu_center input.ip2:active{background-color:orange}
+.menu_top .menu_right
+{
+    width: 300px;
+    background-color: rgb(30, 43, 43);
+    height: 60px;
+    float: left;
+}
+.menu_right ul{margin: 0px;padding: 0px;}
+.menu_right ul li
+{   list-style: none;
+    float: left;}/*mat dau cham,cac link thang hang nhau*/
+.menu_right ul li a
+{    color: white;
+     text-decoration: none;/*mat dau gach chan*/
+     display: block;
+     height: 60px;
+     line-height: 60px; /*can giua*/
+     padding: 0px 15px 0px 15px;/*top right bottom left*/
+     border-right:1px solid white;
+}
+.menu_right ul li a:hover,
+.menu_right ul li a:active{background-color:rgb(211, 126, 46)}
+/*...........................................................*/
+/*..........List...............................*/
+/*............................................................*/
+.list_left
+{
+    width: 300px;
+    height: 1740px;
+    background-color: aqua;
+    float: right;
+    color:red;
+}
+.list_left h1{
+    clear: both;
+    color: rgb(211, 126, 46);
+    float: right;
+    background-color: chocolate;
+}
+.list_left .list_top{height: 580px;width: 300px;background-color: bisque;clear: left;}
+.list_left .list_center{height: 580px;width: 300px;background-color: rgb(196, 156, 108);}
+.list_left .list_bottom{height: 580px;width: 300px;background-color: rgb(121, 81, 32);}
+/*...........................................................*/
+/*..........Banner...............................*/
+/*............................................................*/
+.banner
+{
+    background-color: blueviolet;
+    background-image:linear-gradient(35deg, rgba(66, 111, 141, 0.8) 55%, rgba(54, 175, 169,0.85)),url("../img/anhnen3-204742_1280.webp");
+    background-position: center;
+    background-attachment: fixed;
+    height: 700px;
+    width: 1000px;
+}
+.banner h1{text-align: center;height: 700px;line-height: 700px;color: rgb(216, 128, 45);font-size: 40px;}
+/*...........................................................*/
+/*..........Main...............................*/
+/*............................................................*/
+.main .left
+{
+    width: 200px;
+    background-color: rgb(118, 116, 119);
+    float: left;
+    min-height: 600px;
+}
+.logo_music
+{
+    margin-left: 10px;
+    position: relative;
+    margin-top: 10px;/*khoang cach giua anh va text*/
+}
+.logo_music img
+{
+    margin-left: 0px;
+    width: 180px;
+    height: 130px;
+    border-radius: 10px;
+    border: 2px solid #4279ad;
+    box-shadow: 0px 5px 15px 5px #4e81b1 ;
+    transition: all .5s;
+    /*x-y-do mo-do phong rong-mau....bong phia sau buc tranh*/
+    /* filter: brightness(55%) blur(2px);do sang cua buc anh,lam mo cho buc anh */
+}
+.music-title
+{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    color: #6397ac;
+    transform: translate(-65%,100%);
+     opacity: 0;/*do mo cua tieu de */
+     transition: all .7s;
+}
+.left .logo_music{width: 200px;height: 150px;}
+/* .left .logo_music img{width: 200px;height: 200px;} */
+.logo_music:hover img,
+.logo_music:active img
+{
+    filter: brightness(55%) blur(0.5px);/*do sang cua buc anh,lam mo cho buc anh*/
+}
+.logo_music:hover .music-title,
+.logo_music:active .music-title
+{
+    transform: translate(-65%,-50%);
+    opacity: 1;
+}
+.main .right
+{
+    width: 800px;
+    background-color: rgb(179, 58, 58);
+    float: left;
+    min-height: 640px;
+}
+.right .nhac_vpop{width: 800px;height: 150px;background-color: aquamarine;}
+.right .nhac_kpop{width: 800px;height: 150px;background-color: rgb(127, 140, 255);}
+.right .nhac_usuk{width: 800px;height: 150px;background-color: rgb(182, 127, 255);}
+.right .nhac_latin{width: 800px;height: 190px;background-color: rgb(255, 127, 249);}
+/*...........................................................*/
+/*.................Rank...............................*/
+/*............................................................*/
+.rank{clear: left;  width: 1000px;height: 300px;}
+.rank .rank_left{float: left;width: 600px;height: 300px;}
+.rank_left img{width: 600px;height: 300px;}
+.rank .rank_right{float: left;width: 400px;height: 300px;background-color:  rgb(112, 172, 180);}
+/*...........................................................*/
+/*..........Footer...............................*/
+/*............................................................*/
+.footer
+{
+    color: aliceblue;
+    width: 1000px;
+    height: 100px;
+}
+.footer_left
+{
+    width: 400px;
+    height: 100px;
+    float: left;
+}
+.footer_left .footer_left_logo
+{
+  width: 150px;
+  height: 100px;
+  background-color:  rgb(24, 17, 17);
+  float: left;
+  color: white;
+}
+.footer_left .footer_left_logo .logo_ft{ width: 50px;height: 50%;}
+.footer_left .footer_left_logo h5{clear: left;text-align: center;}
+.footer_left .footer_left_Name
+{   
+  width: 250px;
+  height: 100px;
+  background-color: rgb(24, 17, 17);
+  float: left;
+  color: white;
+}
+.footer_left .footer_left_Name p{height: 100px;line-height: 100px;text-align: center;}
+.footer_right 
+{
+    width: 600px;
+    height: 100px;
+    background-color: rgb(34, 26, 16);
+    float: right;
+    color: white;
+}
+.footer_right ul{margin: 0px;padding: 0px; margin-left: 300px;}
+.footer_right ul li{ list-style: none;float: left;}/*mat dau cham,cac link thang hang nhau*/
+.footer_right ul li a{text-decoration: none;/*mat dau gach chan*/ height: 100px;line-height: 100px; /*can giua*/ padding: 0px 15px 0px 15px;/*top right bottom left*/ border-left:1px solid white;color: white;}
+
